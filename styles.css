@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #020105;
+  }
+  .container{
+      width: 100vw;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .bluebird {
+      padding: 15px;
+    background-image: linear-gradient(
+      -225deg,
+      #3e71b3 0%,
+      #00ffff 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    font-size: 7rem;
+    color: #00ffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textclip 3s linear infinite;
+    font-family: "Courgette", cursive;
+    white-space: nowrap;
+    background-size: 200% auto;
+  }
+  #desc {
+    color: #fff;
+    white-space: nowrap;
+    font-family: "Bangers", cursive;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    padding: 20px;
+    
+  
+  }
+  .btn-waitlist{
+      background-color: transparent;
+      border: 2px solid #00ffff;
+        border-radius: 4px;
+        color: #00ffff;
+        font-size: 1.8rem;
+        padding: 7px 33px;
+        font-family: 'Kanit', sans-serif;
+  }
+  .btn-waitlist:hover{
+    color: rgb(9, 131, 245);
+    border: 2px solid rgb(9, 131, 245);
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .btn-container{
+      padding: 50px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+  }
+  .btn{
+      border-radius: 50%;
+      width: 4rem;
+      aspect-ratio: 1 / 1;
+      font-size: 150%;
+      color: var(--before-hover);
+      border: 2px solid var(--before-hover);
+      background-color: black;
+      transition: all 0.5s ease;
+  }
+  :root {
+      --before-hover:#EEEEEE;
+    --discord: rgb(115, 138, 219);
+    --github: #4B8673;
+    --twitter: #1DA1F2;
+  }
+  .discord:hover{
+      color: var(--discord);
+      border-color:var(--discord);
+  }
+  .twitter:hover{
+    color: var(--twitter);
+    border-color:var(--twitter) ;
+    }
+    .github:hover{
+        color: var(--github);
+        border-color:var(--github) ;
+    }
+    @media only screen and (max-width: 600px) {
+        .bluebird {
+          font-size: 5rem;
+        }
+        #desc{
+            font-size: 1rem;
+        }
+        .btn-waitlist{
+            font-size: 1.2rem;
+        }
+    }
